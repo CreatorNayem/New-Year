@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./icons/web.png" type="image/x-icon" />
     <title>Happy New Year</title>
 
     <!--===== Fontawesme 6.2.1 CDN =====-->
@@ -15,7 +16,7 @@
       referrerpolicy="no-referrer"
     />
     <!--===== CSS =====-->
-    <link rel="stylesheet" href="./Css_style/style.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
     <section class="hero_section">
@@ -100,32 +101,39 @@
         <div class="footer_grid">
           <div class="footer_grid_left">
             <div class="footer_grid_left_text">
-              <h2>Future</h2>
-              <p>
+              <h2 class="footer_title">Future</h2>
+              <p class="footer_text">
                 There are many variations of passages of Lorem Ipsum available,
                 but the majority have suffered alteration in some form, by
                 injected humour, or randomised words
               </p>
-              <p>Email: info@gmail.com</p>
-              <p>Email: 01500 00 00 00</p>
+              <div class="footer_contact">
+                <p class="footer_text">Email: info@gmail.com</p>
+                <p class="footer_text">Phone: 01500 00 00 00</p>
+              </div>
             </div>
             <div class="footer_grid_left_social">
-              <a class="socila_link">
+              <a class="social_link">
                 <i class="fa-brands fa-facebook-f"></i>
               </a>
-              <a class="socila_link">
+              <a class="social_link">
                 <i class="fa-brands fa-twitter"></i>
               </a>
-              <a class="socila_link">
+              <a class="social_link">
                 <i class="fa-brands fa-youtube"></i>
               </a>
             </div>
           </div>
           <div class="footer_grid_right">
-            <form onsubmit="(event) => event.preventDefault()">
+            <form method="post">
               <div class="form_group">
                 <label for="subscribe">Subscribe</label>
-                <input type="text" name="subscribe" id="subscribe" />
+                <input
+                  type="text"
+                  name="subscribe"
+                  id="subscribe"
+                  placeholder="Enter your email"
+                />
               </div>
               <div class="form_group">
                 <button class="btn gradient_btn">Subscribe</button>
